@@ -26,13 +26,13 @@
     </style>
 	</head>
 	<body>
-		<p>Wait this isn't a page! Error {{code}}!</p>
+		<p>Wait this isn't a page! 404 Error!</p>
 		<br />
-		<img src="https://http.cat/{{code}}">
+		<img src="https://http.cat/%7B%7Bcode%7D%7D">
 		<br />
 		<form action="/user">
 			<input type="text" placeholder="username" name="username"></input>
-			<input type="submit" value="go to your shelter"></input>
+			<button type="submit" name="sendit" value="sendit"> Sendit </button>
 		</form>
 	</body>
 </html>

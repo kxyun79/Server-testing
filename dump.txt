@@ -1,0 +1,2 @@
+if request.form[Go_to_your_page] == 'Go to your page':
+  pass
