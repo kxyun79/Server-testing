@@ -30,9 +30,12 @@
 		<br />
 		<img src="https://http.cat/%7B%7Bcode%7D%7D">
 		<br />
-		<form action="/user">
-			<input type="text" placeholder="username" name="username"></input>
-			<button type="submit" name="sendit" value="sendit"> Sendit </button>
+		<form action="/user" method='GET'>
+			<label for="uname" >User Name:</label>
+      <input type='text' id="uname" name='uname'><br></br>
+			<button type="button" name ="Return">
+        <a href = '/user'>user</a>
+       </button>
 		</form>
 	</body>
 </html>

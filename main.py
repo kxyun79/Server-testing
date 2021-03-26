@@ -1,26 +1,16 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, render_template, request, redirect
 server = Flask(__name__)
 app = Flask('a')
 
-data = "The message is " + "'hello world!'"
-
-def sendit():
-  if request.method == "SEND":
-    if request.form.get('send'):
-      return render_template('personal_user.html')
-    else:
-      return render_template('page.html')
-  elif request.method == "GET":
-    #dosomething
-    pass
+data = 'uname'
 @app.route('/')
 def index():
-	return render_template('page.html')
+	return render_template('page.html', )
   
 
-@app.route('/userpage')
+@app.route('/user')
 def userpage():
-  return render_template('personal_user.html')
+  return render_template('personal_user.html',user=data)
 
 
-app.run('0.0.0.0',8080)
+app.run('0.0.0.0',8080) 
